@@ -1,0 +1,13 @@
+<view style="min-height: 100vh; background: #fff;">
+  <image class="logo" src="https://i.postimg.cc/N05dpmGR/a89ff9dce393add9988e360b9641356f.jpg" mode="aspectFit"/>
+  <view class="text">
+    模板小程序logo
+  </view>
+  <view class="wx">
+    <button open-type="getPhoneNumber" bindgetphonenumber="goWx">手机号快捷登录/注册</button>
+  </view>
+  <view class="phone" bindtap='gotoLogin'>
+    账号密码登录
+  </view>
+  <view style="margin-top: 60rpx; text-align: center; color: #999;">这是提示文案</view>
+</view>

@@ -1,0 +1,103 @@
+.img {
+  width: 100%;
+  height: 100%;
+}
+.item-card {
+  margin: 22rpx auto;
+  padding: 22rpx 18rpx 40rpx;
+  width: 670rpx;
+  background: #fff;
+  /* height: 614rpx; */
+  border-radius: 26rpx;
+}
+.card-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #98A0AA;
+}
+.left-block {
+  position: relative;
+  padding: 20rpx 20rpx;
+  width: 288rpx;
+  height: 330rpx;
+  border-radius: 22rpx;
+  background-color: #ECF4FF;
+  background-repeat: no-repeat;
+  background-image: url('https://www.etczj.com/kwe-partner/images/642e906c137af.png');
+  background-size: 154rpx 148rpx;
+  background-position: right top;
+}
+.img1 {
+  position: absolute;
+  right: 4rpx;
+  top: 4rpx;
+}
+.img2 {
+  position: absolute;
+  right: 4rpx;
+  bottom: 4rpx;
+}
+.card-title {
+  margin-bottom: 12rpx;
+  font-size: 34rpx;
+  color: #0C1016;
+  font-weight: 500;
+}
+.left-block view:nth-child(2){
+  width: 190rpx;
+  font-size: 24rpx;
+  color: #98A0AA;
+  z-index: 10;
+}
+.left-block view:last-child{
+  position: absolute;
+  bottom: 24rpx;
+  left: 96rpx;
+}
+.right-block .top {
+  position: relative;
+  padding: 20rpx 20rpx;
+  width: 288rpx;
+  height: 134rpx;
+  background: #FFF2E1;
+  border-radius: 22rpx;
+  background-repeat: no-repeat;
+  background-image: url('https://www.etczj.com/kwe-partner/images/642e906a801ab.png');
+  background-size: 120rpx 100rpx;
+  background-position: right top;
+}
+.img3 {
+  position: absolute;
+  right: 4rpx;
+  top: 4rpx;
+}
+.right-block .bottom {
+  position: relative;
+  margin-top: 22rpx;
+  padding: 20rpx 20rpx;
+  width: 288rpx;
+  height: 134rpx;
+  background: #E7FBFF;
+  border-radius: 22rpx;
+  background-repeat: no-repeat;
+  background-image: url('https://www.etczj.com/kwe-partner/images/642e906d3a636.png');
+  background-size: 120rpx 100rpx;
+  background-position: right top;
+}
+.function-line {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50rpx;
+  font-size: 24rpx;
+  color: #A6A5A7;
+}
+.line-item {
+  text-align: center;
+}
+.line-item .title {
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  color: #484748;
+  font-weight: 500;
+}

@@ -1,0 +1,31 @@
+/**app.wxss 小程序全局样式**/
+.container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 146rpx;
+  background-color: #f3f5f4;
+} 
+/* 覆盖tdesign样式 */
+.t-tab-bar-item {
+  margin: 16rpx 0 0 !important;
+}
+.t-swiper-host {
+  border-radius: 0 !important;
+}
+.t-tab-bar--normal.t-tab-bar--safe {
+  padding-bottom: 40rpx !important;
+}
+/* 未登录提示栏样式 */
+.login-tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20rpx 50rpx;
+  width: 614rpx;
+  height: 70rpx;
+  background: #D1E3FF;
+  border-radius: 54rpx;
+  color: #3871FF;
+  font-size: 26rpx;
+}

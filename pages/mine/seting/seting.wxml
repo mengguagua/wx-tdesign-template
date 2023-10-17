@@ -1,0 +1,32 @@
+<view class="container" style="padding-top: 8rpx;">
+  <view class="list">
+    <view class="row" style="height: 106rpx;" bindtap="goPathManage">
+      <t-image class="head-img" src="https://www.etczj.com/kwe-partner/images/partner-setting4.png" width="36rpx" height="36rpx" />
+      <text>头像</text>
+      <view class="user-img">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="row" bindtap="goEdit">
+      <t-image class="head-img" src="https://www.etczj.com/kwe-partner/images/642fb81ecb0e8.png" width="36rpx" height="36rpx" />
+      <text>子渠道名称</text>
+      <view class="right-text">{{userName}}</view>
+      <view class="arrow"></view>
+    </view>
+    <view class="line"></view>
+    <view class="row">
+      <t-image class="head-img" src="https://www.etczj.com/kwe-partner/images/partner-setting1.png" width="36rpx" height="36rpx" />
+      <text>登录账号</text>
+      <view class="right-text">{{userId}}</view>
+    </view>
+    <view class="line"></view>
+    <view class="row" bindtap="goBindPhone">
+      <t-image class="head-img" src="https://www.etczj.com/kwe-partner/images/partner-setting5.png" width="36rpx" height="36rpx" />
+      <text>绑定手机号</text>
+      <view class="right-text">{{authPhone}}</view>
+      <view wx:if="{{authPhone === '未绑定'}}" class="arrow"></view>
+    </view>
+  </view>
+  <view class="logout-btn" bindtap="toLogout">退出登录</view>
+</view>

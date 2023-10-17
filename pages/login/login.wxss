@@ -1,0 +1,45 @@
+.top-view {
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 160rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #333333;
+}
+.title {
+  margin-bottom: 120rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 48rpx;
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
+}
+.suffix {
+  display: flex;
+  align-items: center;
+}
+.suffix--line {
+  width: 1px;
+  height: 24px;
+  background-color: #f6f6f6;
+  margin-right: 16px;
+}
+.image {
+  width: 72px;
+  height: 36px;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80rpx auto 0;
+  width: 600rpx;
+  height: 92rpx;
+  background: #3871FF;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}

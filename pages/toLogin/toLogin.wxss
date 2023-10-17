@@ -1,0 +1,40 @@
+.logo {
+  width: 24vw;
+  margin: auto;
+  display: block;
+  height: 20vw;
+  padding-top: 12vh;
+}
+.text {
+  padding-top: 4vw;
+  text-align: center;
+  font-size: 40rpx;
+  color: #333333;
+  font-weight: 500;
+}
+.wx {
+  margin: 15vh auto 0;
+  text-align: center;
+  width: 80vw;
+  height: 14vw;
+  font-size: 40rpx;
+  line-height: 14vw;
+}
+.wx button {
+  background: #3871FF;
+  color: #fff;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+}
+.phone {
+  margin: 5vw auto 0;
+  text-align: center;
+  background: #fff;
+  width: 80vw;
+  height: 12vw;
+  border-radius: 10rpx;
+  color: rgba(30,30,30,0.5);
+  font-size: 36rpx;
+  line-height: 12vw;
+  border: 1px solid #e0e1e3;
+}

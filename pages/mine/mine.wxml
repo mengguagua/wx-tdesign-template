@@ -1,0 +1,16 @@
+<view class="container" style="color: #333;">
+  <view class="head">
+    <t-image class="user-img" src="https://www.etczj.com/kwe-partner/images/partner-head.jpg" width="140rpx" height="140rpx" shape="circle" aria-label="头像" />
+    <view class="head-text">
+      <view>{{userInfo.userName}}</view>
+      <view>{{userInfo.authPhone || ''}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="row" bindtap="goSeting">
+      <t-image class="head-img" src="https://www.etczj.com/kwe-partner/images/642fbdaf7a38c.png" width="36rpx" height="40rpx" />
+      <text>设置</text>
+      <view class="arrow"></view>
+    </view>
+  </view>
+</view>

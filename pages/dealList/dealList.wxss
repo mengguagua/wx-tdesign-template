@@ -1,0 +1,111 @@
+.search-line {
+  display: flex;
+  align-items: center;
+  height: 96rpx;
+  background-color: #3871FF;
+  padding-top: 24rpx;
+}
+.search-input {
+  margin: auto 20rpx;
+  padding: 10rpx 30rpx !important;
+  width: 670rpx;
+  height: 52rpx;
+  border-radius: 34rpx;
+}
+.t-input--border::after {
+  position: relative !important;
+}
+.list-card {
+  position: relative;
+  margin: 22rpx auto;
+  padding: 40rpx 40rpx 10rpx;
+  width: 630rpx;
+  /* height: 570rpx; */
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.card-vehicleCode {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240rpx;
+  height: 94rpx;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+.yellow-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433a7eed12b3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.green-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433aa3e0dc98.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.blue-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433aa5a899cb.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+}
+.white-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433aab6e9bbd.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.white-blue-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433aad960215.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.black-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433aaf582720.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+}
+.yellow-green-card {
+  background-image: url('https://www.etczj.com/kwe-partner/images/6433ab15a5f53.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.no-pass {
+  background-image: url('https://www.etczj.com/kwe-partner/images/642f80f28e295.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 120rpx 112rpx;
+}
+.pass {
+  background-image: url('https://www.etczj.com/kwe-partner/images/642f83a9e4f99.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 120rpx 112rpx;
+}
+.pass-ing {
+  background-image: url('https://www.etczj.com/kwe-partner/images/642f83d64e3e0.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 120rpx 112rpx;
+}
+.card-row {
+  margin: 32rpx 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #666;
+}
+.card-row view:last-child {
+  color: #333;
+  font-weight: 600;
+}
+.no-data {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 40rpx;
+  color: #bababa;
+}

@@ -1,0 +1,48 @@
+<view class="container">
+  <t-swiper
+    height="480rpx"
+    current="{{current}}"
+    autoplay="{{autoplay}}"
+    duration="{{duration}}"
+    interval="{{interval}}"
+    list="{{swiperList}}"
+    image-props="{{ {shape: 'square'} }}"
+    navigation="{{ { type: 'dots-bar' } }}"
+  />
+  <view class="item-card">
+    <view class="card-line">
+      <view class="left-block" bindtap="goEtcApply">
+        <view class="card-title">模块1</view>
+        <view>这是宣传标语</view>
+        <t-image class="img2" src="https://www.etczj.com/kwe-partner/images/642e9085769b6.png" width="140rpx" height="120rpx" shape="round"/>
+        <!-- <view>- 敬请期待 -</view> -->
+      </view>
+      <view class="right-block">
+        <view class="top" bindtap="goDealList">
+          <view class="card-title">模块2</view>
+          <view>这是宣传标语</view>
+        </view>
+        <view class="bottom" bindtap="goAddCarSearch">
+          <view class="card-title">模块1</view>
+          <view>这是宣传标语</view>
+        </view>
+      </view>
+    </view>
+    <view class="function-line">
+      <view class="line-item" bindtap="goInviteEtc">
+        <t-image src="https://www.etczj.com/kwe-partner/images/642e9bb4e52ab.png" width="66rpx" height="66rpx" shape="square"/>
+        <view class="title">功能1</view>
+        <view>功能说明</view>
+      </view>
+      <view class="line-item">
+        <t-image src="https://www.etczj.com/kwe-partner/images/642e9cdd71de1.png" width="66rpx" height="66rpx" shape="square"/>
+        <view class="title">更多功能</view>
+        <view>敬请期待</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{!!!token}}" class="login-tip">
+    <text>登录后，可访问更多功能</text>
+    <t-button bindtap="goLogin" style="height: 76rpx;width: 174rpx;margin: 0;" theme="primary" size="large" shape="round">登录</t-button>
+  </view>
+</view>

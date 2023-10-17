@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="search-line">
+    <t-input class="search-input" onchange="getVehicleCode" value="{{vehicleCode}}" placeholder="请输入关键字">
+      <t-button bindtap="searchData" slot="suffix" theme="primary" icon="search" variant="text" aria-label="搜索"></t-button>
+    </t-input>
+    <t-icon style="margin-right: 20rpx;" name="filter" size="48rpx" color="#fff" data-name="filter" bind:click="onIconTap" />
+  </view>
+  <t-tabs defaultValue="{{0}}" value="{{tabValue}}" bind:change="onTabsChange" t-class="custom-tabs">
+    <t-tab-panel label="全部" value="" />
+    <t-tab-panel label="不通过" value="2" />
+    <t-tab-panel label="处理中" value="0" />
+    <t-tab-panel label="已完成" value="1" />
+  </t-tabs>
+  <view wx:for="{{listData}}" wx:key="index" wx:if="tabValue == 0" class="list-card {{item.currentStatus}}">
+    <view class="card-vehicleCode {{vehicleColorDic[item.licenseColor]}}">
+      {{item.vehicleCode}}
+    </view>
+    <view class="card-row" style="margin-top: 160rpx;">
+      <view>ETC通行卡号</view>
+      <view>{{item.cardCode}}</view>
+    </view>
+    <view wx:if="{{item.currentStatus == 'pass'}}" class="card-row">
+      <view>完成时间</view>
+      <view>{{item.cardMarkTimeStr}}</view>
+    </view>
+    <view class="card-row">
+      <view>授权办卡状态</view>
+      <view>{{item.makeCardStateStr}}</view>
+    </view>
+    <view class="card-row">
+      <view>会员名称</view>
+      <view>{{item.customerName}}</view>
+    </view>
+    <view class="card-row">
+      <view>会员编号</view>
+      <view>{{item.customerId}}</view>
+    </view>
+    <view class="card-row">
+      <view>快递公司</view>
+      <view>{{item.expressCompany}}</view>
+    </view>
+    <view class="card-row">
+      <view>快递单号</view>
+      <view>{{item.waybillNumber}}</view>
+    </view>
+  </view>
+  <view wx:if="{{listData.length == 0}}">
+    <view class="no-data">未查询到更多数据</view>
+  </view>
+  <t-calendar visible="{{dateVisible}}" value="{{startTimeRang}}" min-date="{{minDate}}" bind:confirm="handleConfirm" type="range" />
+</view>

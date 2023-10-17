@@ -1,0 +1,19 @@
+<view class="top-view">
+  <view class="title">账号密码登录</view>
+  <t-input label="账号" placeholder="请输入登录账号" value="{{userId}}" onchange="getUserId"></t-input>
+  <t-input wx:if="{{showType == 1}}" label="密码" type="password" placeholder="请输入密码" value="{{userPwd}}" onclear="getUserPwd" 
+    onchange="getUserPwd" suffixIcon="{{ { name: 'browse-off' } }}" data-showtype="2" bind:click="changeShow" />
+  <t-input wx:if="{{showType == 2}}" label="密码" placeholder="请输入密码" value="{{userPwd}}" onclear="getUserPwd" onchange="getUserPwd"
+    suffixIcon="{{ { name: 'browse' } }}" data-showtype="1" bind:click="changeShow" />
+  <t-input placeholder="请输入右侧验证码" label="验证码" value="{{checkCode}}" onchange="getCheckCodeValue">
+    <view slot="suffix" class="suffix">
+      <view class="suffix--line"></view>
+      <image
+        bindtap="getCheckCode"
+        class="image"
+        src="{{codeImgSrc}}"
+      />
+    </view>
+  </t-input>
+  <view class="btn-login" bindtap="doLogin">登录</view>
+</view>
